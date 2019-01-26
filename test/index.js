@@ -22,7 +22,7 @@ test("seeded", function (assert) {
     var ts = time()
     var ats = now()
 
-    assert.ok(ts >= bts - before + 40)
+    assert.ok(ts >= 40)
     assert.ok(ts <= ats - after + 40)
 
     setTimeout(function () {
@@ -30,7 +30,7 @@ test("seeded", function (assert) {
         var ts = time()
         var ats = now()
 
-        assert.ok(ts >= bts - before + 40)
+        assert.ok(ts >= 40)
         assert.ok(ts <= ats - after + 40)
 
         assert.end()
